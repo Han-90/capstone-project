@@ -22,7 +22,7 @@ export default function HomePage() {
 				<title key="title">My Capstone Project</title>
 				<meta key="description" name="description" content="This is my project" />
 			</Helmet>
-			<h1>Home!</h1>
+			<h1>Music Box</h1>
 		</Layout>
 	);
 }

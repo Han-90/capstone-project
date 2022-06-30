@@ -4,7 +4,6 @@ import direStraits from './images/DireStraits.jpg';
 import frankiVallie from './images/FrankiValli.jpeg';
 import frankSinatra from './images/FrankSinatra.jpeg';
 import ludovicoEinaudi from './images/LudovicoEinaudi.jpeg';
-
 const inspirations = [
 	{
 		id: nanoid(),

@@ -3,7 +3,6 @@ import ArtistCard from '../ArtistCard/ArtistCard';
 
 import {InspirationCard} from './Card.styled';
 export default function Card() {
-	console.log(inspirations);
 	return (
 		<>
 			<InspirationCard>

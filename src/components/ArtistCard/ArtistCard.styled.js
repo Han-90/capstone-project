@@ -42,4 +42,5 @@ const Song = styled.p`
 	padding-left: 1rem; ;
 `;
 
+
 export {ArtistCard, Song, Information, ArtistName, Cover};

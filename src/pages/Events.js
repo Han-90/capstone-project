@@ -1,17 +1,15 @@
 import {Helmet} from 'react-helmet';
 
-import Card from '../components/Card/Card';
 import Layout from '../components/Layout';
 
-export default function HomePage({inspirations}) {
+export default function Events() {
 	return (
 		<Layout>
 			<Helmet>
-				<title key="title">My Capstone Project</title>
+				<title key="title">Events</title>
 				<meta key="description" name="description" content="This is my project" />
 			</Helmet>
-			<h1>Music Box</h1>
-			<Card inspirations={inspirations} />
+			<h1>Events</h1>
 		</Layout>
 	);
 }

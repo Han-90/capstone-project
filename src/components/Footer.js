@@ -1,7 +1,10 @@
+import Navbar from './Navbar/navbar';
+
 export default function Footer() {
 	return (
 		<footer>
-			<div>© 2022 by Gökhan Özdemir</div>
+			<Navbar />
+			<div></div>
 		</footer>
 	);
 }

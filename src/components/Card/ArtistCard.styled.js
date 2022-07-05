@@ -18,15 +18,15 @@ const Cover = styled.img`
 const Information = styled.section`
 	display: grid;
 	grid-template-columns: 60% 40%;
-	width: 100%;
 	grid-template-rows: 1fr 1fr;
+	width: 100%;
 `;
 
 const ArtistName = styled.p`
 	display: grid;
 	grid-column: 1;
-	color: whitesmoke;
 	grid-row: 1;
+	color: whitesmoke;
 	margin: 0;
 	padding-left: 1rem;
 	white-space: nowrap;
@@ -35,8 +35,8 @@ const ArtistName = styled.p`
 const Song = styled.p`
 	display: grid;
 	grid-column: 1;
-	color: whitesmoke;
 	grid-row: 2;
+	color: whitesmoke;
 	margin: 0;
 	padding-left: 1rem;
 	white-space: nowrap;

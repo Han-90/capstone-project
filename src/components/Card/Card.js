@@ -1,24 +1,17 @@
-import {Link} from 'react-router-dom';
+import Button from '../Button';
 
-import ArtistCard from '../ArtistCard/ArtistCard';
-
-import {InspirationCard} from './Card.styled';
-export default function Card({inspirations}) {
+import {ArtistCard as StyledCard, Song, Information, ArtistName, Cover} from './ArtistCard.styled';
+export default function Card({inspiration}) {
 	return (
 		<>
-			<InspirationCard>
-				{inspirations.map(inspiration => (
-					<>
-						<Link to={`/details/${inspiration.id}`}></Link>
-						<ArtistCard
-							key={inspiration.id}
-							name={inspiration.interpret}
-							title={inspiration.song}
-							image={inspiration.cover}
-						/>
-					</>
-				))}
-			</InspirationCard>
+			<StyledCard>
+				<Cover src={inspiration.cover} />
+				<Information>
+					<ArtistName>{inspiration.name}</ArtistName>
+					<Song>{inspiration.interpret}</Song>
+					<Button>More</Button>
+				</Information>
+			</StyledCard>
 		</>
 	);
 }

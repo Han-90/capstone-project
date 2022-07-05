@@ -1,21 +1,17 @@
-import {inspirations} from '../../data';
-import ArtistCard from '../ArtistCard/ArtistCard';
+import Button from '../Button';
 
-import {InspirationCard} from './Card.styled';
-export default function Card() {
-	console.log(inspirations);
+import {ArtistCard as StyledCard, Song, Information, ArtistName, Cover} from './ArtistCard.styled';
+export default function Card({inspiration}) {
 	return (
 		<>
-			<InspirationCard>
-				{inspirations.map(inspiration => (
-					<ArtistCard
-						key={inspiration.id}
-						name={inspiration.interpret}
-						title={inspiration.song}
-						image={inspiration.cover}
-					/>
-				))}
-			</InspirationCard>
+			<StyledCard>
+				<Cover src={inspiration.cover} />
+				<Information>
+					<ArtistName>{inspiration.name}</ArtistName>
+					<Song>{inspiration.interpret}</Song>
+					<Button>More</Button>
+				</Information>
+			</StyledCard>
 		</>
 	);
 }

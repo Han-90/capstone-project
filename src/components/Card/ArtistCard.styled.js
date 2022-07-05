@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 const ArtistCard = styled.section`
 	width: 45%;
-	background-color: hsl(1, 0%, 30%);
-	margin: 2.5%;
 	height: fit-content;
+	margin: 2.5%;
 	border-radius: 10%;
+	background-color: hsl(1, 0%, 30%);
 `;
 
 const Cover = styled.img`
@@ -16,30 +16,30 @@ const Cover = styled.img`
 `;
 
 const Information = styled.section`
-	width: 100%;
 	display: grid;
 	grid-template-columns: 60% 40%;
 	grid-template-rows: 1fr 1fr;
+	width: 100%;
 `;
 
 const ArtistName = styled.p`
-	color: whitesmoke;
 	display: grid;
 	grid-column: 1;
 	grid-row: 1;
-	white-space: nowrap;
 	margin: 0;
 	padding-left: 1rem;
+	color: whitesmoke;
+	white-space: nowrap;
 `;
 
 const Song = styled.p`
-	color: whitesmoke;
 	display: grid;
 	grid-column: 1;
 	grid-row: 2;
-	white-space: nowrap;
 	margin: 0;
-	padding-left: 1rem; ;
+	padding-left: 1rem;
+	color: whitesmoke;
+	white-space: nowrap;
 `;
 
 export {ArtistCard, Song, Information, ArtistName, Cover};

@@ -7,7 +7,7 @@ export default function Details({inspirations}) {
 		<>
 			<h2>{thisInspiration.interpret}</h2>
 			<p>{thisInspiration.lyrics}</p>
-			<img src={thisInspiration.cover} />
+			<img src={thisInspiration.cover} alt="Inspirationcards Images" />
 		</>
 	);
 }

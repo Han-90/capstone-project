@@ -4,8 +4,8 @@ const ArtistCard = styled.section`
 	width: 45%;
 	height: fit-content;
 	margin: 2.5%;
-	background-color: hsl(1, 0%, 30%);
 	border-radius: 10%;
+	background-color: hsl(1, 0%, 30%);
 `;
 
 const Cover = styled.img`
@@ -17,29 +17,29 @@ const Cover = styled.img`
 
 const Information = styled.section`
 	display: grid;
-	width: 100%;
 	grid-template-columns: 60% 40%;
+	width: 100%;
 	grid-template-rows: 1fr 1fr;
 `;
 
 const ArtistName = styled.p`
 	display: grid;
-	color: whitesmoke;
 	grid-column: 1;
+	color: whitesmoke;
 	grid-row: 1;
 	margin: 0;
-	white-space: nowrap;
 	padding-left: 1rem;
+	white-space: nowrap;
 `;
 
 const Song = styled.p`
 	display: grid;
-	color: whitesmoke;
 	grid-column: 1;
+	color: whitesmoke;
 	grid-row: 2;
 	margin: 0;
+	padding-left: 1rem;
 	white-space: nowrap;
-	padding-left: 1rem; ;
 `;
 
 export {ArtistCard, Song, Information, ArtistName, Cover};

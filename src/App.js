@@ -5,7 +5,6 @@ import Details from './pages/Details';
 import Events from './pages/Events';
 import Home from './pages/index';
 export default function App() {
-	console.log(inspirations);
 	return (
 		<>
 			<BrowserRouter>

@@ -26,8 +26,8 @@ const ArtistName = styled.p`
 	display: grid;
 	grid-column: 1;
 	grid-row: 1;
-	color: whitesmoke;
 	margin: 0;
+	color: whitesmoke;
 	padding-left: 1rem;
 	white-space: nowrap;
 `;
@@ -36,8 +36,8 @@ const Song = styled.p`
 	display: grid;
 	grid-column: 1;
 	grid-row: 2;
-	color: whitesmoke;
 	margin: 0;
+	color: whitesmoke;
 	padding-left: 1rem;
 	white-space: nowrap;
 `;

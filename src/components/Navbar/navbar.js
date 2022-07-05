@@ -14,8 +14,6 @@ export default function NavBar() {
 					<li>
 						<Link to="/events">Events</Link>
 					</li>
-					{/* <Link to="/library">Library</Link> */}
-					{/* <li>Other</li> */}
 				</ul>
 			</nav>
 		</FooterWrapper>

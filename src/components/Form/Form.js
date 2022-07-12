@@ -1,10 +1,23 @@
+import {useState} from 'react';
+
 import {StyledFormLabel} from './Form.styled';
 
 const Form = () => {
+	const [event, setEvent] = useState(null);
 	return (
 		<div className="create">
 			<h2> Add a new event</h2>
-			<form>
+			<form
+				onSubmit={event => {
+					event.preventDefault();
+					const formData = new FormData(event.target);
+					const formValues = Object.fromEntries(formData);
+					setEvent(formValues);
+					console.log(formValues);
+
+					console.log('wurde geklickt');
+				}}
+			>
 				<StyledFormLabel htmlFor="eventName">Event name:</StyledFormLabel>
 				<input type="text" id="eventName" name="eventName" required />
 
@@ -23,6 +36,7 @@ const Form = () => {
 				<br />
 				<button type="submit">Submit</button>
 			</form>
+			<pre>{JSON.stringify(event, null, 4)}</pre>
 		</div>
 	);
 };

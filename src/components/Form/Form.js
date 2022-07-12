@@ -8,14 +8,18 @@ const Form = () => {
 		<div className="create">
 			<h2> Add a new event</h2>
 			<form
-				onSubmit={event => {
-					event.preventDefault();
-					const formData = new FormData(event.target);
+				onSubmit={event_ => {
+					// unterbindet das Default verhalten des Formulars
+					// dadurch wird das Laden der Seite verhindert
+					event_.preventDefault();
+					// Liest die Daten innerhalb der Form aus (ausschließlich die Daten, die mit dem "name" Attribut versehen wurden)
+					const formData = new FormData(event_.target);
+					// Gibt die ausgelesenen Daten als Objekt aus
 					const formValues = Object.fromEntries(formData);
+					// Speichert die Werte im State
 					setEvent(formValues);
-					console.log(formValues);
-
-					console.log('wurde geklickt');
+					// Resetted die eingegebenen Werte in der Form
+					event_.target.reset();
 				}}
 			>
 				<StyledFormLabel htmlFor="eventName">Event name:</StyledFormLabel>

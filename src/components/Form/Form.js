@@ -1,12 +1,19 @@
 import {useState} from 'react';
+import {Link} from 'react-router-dom';
 
-import {StyledFormLabel} from './Form.styled';
+import {
+	StyledFormLabel,
+	StyledHeader,
+	StyledInputLabel,
+	StyledSelectLabel,
+	StyledSubmitButton,
+} from './Form.styled';
 
 const Form = () => {
 	const [event, setEvent] = useState(null);
 	return (
 		<div className="create">
-			<h2> Add a new event</h2>
+			<StyledHeader>Add a new event</StyledHeader>
 			<form
 				onSubmit={event_ => {
 					// unterbindet das Default verhalten des Formulars
@@ -23,22 +30,22 @@ const Form = () => {
 				}}
 			>
 				<StyledFormLabel htmlFor="eventName">Event name:</StyledFormLabel>
-				<input type="text" id="eventName" name="eventName" required />
+				<StyledInputLabel type="text" id="eventName" name="eventName" required />
 
 				<StyledFormLabel htmlFor="location">Location:</StyledFormLabel>
-				<select id="location" name="location" required>
+				<StyledSelectLabel id="location" name="location" required>
 					<option value="Stuttgart">Stuttgart</option>
 					<option value="München">München</option>
 					<option value="Köln">Köln</option>
 					<option value="Düsseldorf">Düsseldorf</option>
 					<option value="Hamburg">Hamburg</option>
 					<option value="Berlin">Berlin</option>
-				</select>
+				</StyledSelectLabel>
 
 				<StyledFormLabel htmlFor="date">Date</StyledFormLabel>
-				<input type="date" id="date" name="date" required />
+				<StyledInputLabel type="date" id="date" name="date" required />
 				<br />
-				<button type="submit">Submit</button>
+				<StyledSubmitButton type="submit">Submit</StyledSubmitButton>
 			</form>
 			<pre>{JSON.stringify(event, null, 4)}</pre>
 		</div>

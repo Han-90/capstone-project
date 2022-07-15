@@ -6,33 +6,33 @@ export const StyledFormLabel = styled.label`
 `;
 
 export const StyledHeader = styled.h2`
-	font-size: 20px;
-	color: hsla(148, 47%, 49%, 1);
 	margin-bottom: 30px;
+	color: hsla(148, 47%, 49%, 1);
+	font-size: 20px;
 `;
 
 export const StyledInputLabel = styled.input`
-	width: 100%;
-	padding: 6px 10px;
-	margin: 10px 0;
-	border: 1px solid #ddd;
-	box-sizing: border-box;
 	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 10px 0;
+	padding: 6px 10px;
+	border: 1px solid #ddd;
 `;
 export const StyledSelectLabel = styled.select`
-	width: 100%;
-	padding: 6px 10px;
-	margin: 10px 0;
-	border: 1px solid #ddd;
-	box-sizing: border-box;
 	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 10px 0;
+	padding: 6px 10px;
+	border: 1px solid #ddd;
 `;
 
 export const StyledSubmitButton = styled.button`
+	padding: 8px;
+	border: 0;
+	border-radius: 8px;
 	background: hsla(148, 47%, 49%, 1);
 	color: #fff;
-	border: 0;
-	padding: 8px;
-	border-radius: 8px;
 	cursor: pointer;
 `;

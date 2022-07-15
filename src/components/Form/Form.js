@@ -13,11 +13,10 @@ import {
 } from './Form.styled';
 
 const Form = () => {
-	const [event, setEvent] = useState();
 	const [events, setEvents] = useState([]);
 
 	return (
-		<div className="create">
+		<div>
 			<StyledHeader>Add a new event</StyledHeader>
 			<form
 				onSubmit={event_ => {

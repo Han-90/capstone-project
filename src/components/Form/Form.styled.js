@@ -29,10 +29,14 @@ export const StyledSelectLabel = styled.select`
 `;
 
 export const StyledSubmitButton = styled.button`
+	margin: 1em 7em 7em 2em;
 	padding: 8px;
 	border: 0;
 	border-radius: 8px;
 	background: hsla(148, 47%, 49%, 1);
 	color: #fff;
 	cursor: pointer;
+`;
+export const StyledFormBody = styled.body`
+	background-color: white;
 `;

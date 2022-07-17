@@ -4,7 +4,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
 export default function Header() {
-	const styledHeader = {background: '#35383F', opacity: '0.95'};
+	const styledHeader = {background: 'hsla(360, 0%, 18%, 1)', opacity: '0.95'};
 	const stlyedTypography = {left: '7em'};
 	return (
 		<Box sx={{flexGrow: 1}}>

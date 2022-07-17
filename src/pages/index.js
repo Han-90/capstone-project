@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 
 import Card from '../components/Card/Card';
 import Layout from '../components/Layout';
+
 export default function HomePage({inspirations}) {
 	return (
 		<Layout>

@@ -10,7 +10,7 @@ export default function Events() {
 				<title key="title">Events</title>
 				<meta key="description" name="description" content="This is my project" />
 			</Helmet>
-			<h1>Events</h1>
+			<h1>Events </h1>
 			<Form />
 		</Layout>
 	);

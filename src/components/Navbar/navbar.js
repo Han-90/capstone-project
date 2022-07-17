@@ -11,7 +11,7 @@ import {Link} from 'react-router-dom';
 
 export default function CreateBottomNavigation() {
 	// ein Funktionsaufruf in dem ich meine Navigationsleiste erstelle und gleichzeitig auch exportiere, um sie als Komponente wieder verwenden zu können
-	const navigationStyle = {background: '#35383F', height: '50px', opacity: '0.95'};
+	const navigationStyle = {background: 'hsla(360, 0%, 18%, 1)', height: '50px', opacity: '0.95'};
 	// ich deklariere eine Konstante um meine Elemente zu stylen. In den Properties weise ich die Styles zu und überreiche sie im jeweiligen Tag.
 	const iconStyle = {color: 'white'};
 	return (

@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 
 import EventList from './EventList';
 import {
+	StyledFormBody,
 	StyledFormLabel,
 	StyledHeader,
 	StyledInputLabel,

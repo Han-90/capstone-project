@@ -1,12 +1,14 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 import {inspirations} from './data';
+import {GlobalStyle} from './GlobalStyles';
 import Details from './pages/Details';
 import Events from './pages/Events';
 import Home from './pages/index';
 export default function App() {
 	return (
 		<>
+			<GlobalStyle />
 			<BrowserRouter>
 				<Routes>
 					<Route path="/">

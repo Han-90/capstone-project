@@ -10,7 +10,6 @@ export default function HomePage({inspirations}) {
 				<title key="title">My Capstone Project</title>
 				<meta key="description" name="description" content="This is my project" />
 			</Helmet>
-			<h1>Music Box</h1>
 			{inspirations.map(inspiration => (
 				<Link key={inspiration.id} to={`/details/${inspiration.id}`}>
 					<Card key={inspiration.id} inspiration={inspiration} />

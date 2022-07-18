@@ -16,20 +16,13 @@ export default function CreateBottomNavigation() {
 	const iconStyle = {color: 'white'};
 	return (
 		// nachdem ich meine Funktion aufgerufen habe und somit einen Input erstellt habe, muss ich auch einen Output gewährleisten, den ich innerhalb des return scopes ausgebe.
-		<Box sx={{width: 375}}>
+		<Box>
 			<BottomNavigation showLabels style={navigationStyle}>
 				<Link to="/">
 					<BottomNavigationAction label="Home" icon={<HomeIcon />} style={iconStyle} />
 				</Link>
-				<Link to="events">
+				<Link to="/events">
 					<BottomNavigationAction label="Events" icon={<EventIcon />} style={iconStyle} />
-				</Link>
-				<Link to="library">
-					<BottomNavigationAction
-						label="Library"
-						icon={<LibraryBooksIcon />}
-						style={iconStyle}
-					/>
 				</Link>
 			</BottomNavigation>
 		</Box>
